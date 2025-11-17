@@ -27,3 +27,62 @@ body {
     color: var(--text-color);
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
+}
+
+.logo img {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+}   
+
+.navbar a {
+    padding: 8px 17px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-decoration: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background: var(--main-color);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+
+.header-icons .bxr {
+    color: var(--bg-color);
+}
+
+.header-icons .bxr:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    color: var(--bg-color);
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
